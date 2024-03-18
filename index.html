@@ -28,14 +28,14 @@
         src="./../image/img101.png"
         alt="Description of the image"
       />
-      <div class="main">
-        <a class="hm" href="#">Home</a>
-        <a class="jk" href="#">Join Koottu.in</a>
-        <a class="au" href="#">About Us</a>
-        <a class="num" href="tel:+91 8848129990">+91 8848129990</a>
+      <div class="menu" id="MenuItems">
+        <li class="num"><a href="tel:+1234567890">+91 8848129990 </a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Join Koottu.in</a></li>
+        <li><a href="#">About Us</a></li>
       </div>
-      <div class="menu-icon" onclick="toggleMenu()">
-        <i class="fas fa-bars"></i>
+      <div class="menu-icon">
+        <i class="fas fa-bars" onclick="menutoggle()"></i>
       </div>
     </div>
     <div class="new">
@@ -130,11 +130,12 @@
         <div class="footer-content">
           <p class="ktug">Koottu.in@gmail.com</p>
           <p class="phn">+91 8848129990</p>
-          <div class="ph">
-            <i class="fa-solid fa-phone"></i>
-          </div>
+
           <div class="mil">
             <i class="fa fa-envelope" aria-hidden="true"></i>
+          </div>
+          <div class="ph">
+            <i class="fa-solid fa-phone"></i>
           </div>
         </div>
         <div class="footer-content">
@@ -146,10 +147,10 @@
         <div class="footer-content">
           <ul class="social-icons">
             <li>
-              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
             </li>
             <li>
-              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
             </li>
           </ul>
         </div>
@@ -164,22 +165,15 @@
       </div>
     </footer>
     <script>
-      function toggleMenu() {
-        const mainNav = document.querySelector(".main");
-        mainNav.classList.toggle("menu-open");
-      }
+      function menutoggle() {
+        var MenuItems = document.getElementById("MenuItems");
 
-      // Function to hide the menu when screen size changes
-      function hideMenuOnLargeScreen() {
-        const screenWidth = window.innerWidth;
-        const mainNav = document.querySelector(".main");
-        if (screenWidth > 768) {
-          mainNav.classList.remove("menu-open");
+        if (MenuItems.style.maxHeight === "0px") {
+          MenuItems.style.maxHeight = "500px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
         }
       }
-
-      // Event listener for screen size change
-      window.addEventListener("resize", hideMenuOnLargeScreen);
     </script>
   </body>
 </html>

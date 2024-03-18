@@ -5,7 +5,6 @@ body {
   height: auto;
   font-family: Inter, sans-serif !important;
   text-decoration: none;
-
 }
 .new {
   background: rgba(255, 236, 217, 1);
@@ -24,7 +23,7 @@ body {
   height: 80px;
 }
 
-.main {
+.menu {
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -33,7 +32,7 @@ body {
   margin-top: 25px;
 }
 
-.hm, .jk, .au {
+.menu li a {
   font-size: 16px;
   font-weight: 300;
   line-height: 19px;
@@ -72,11 +71,11 @@ body {
     display: none;
   }
 }
-@media screen and (max-width: 768px) {
-  .main {
+/* @media screen and (max-width: 768px) {
+  .menuList {
     display: none;
   }
-  .menu-open .main {
+  .menuList {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,7 +88,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
-}
+} */
 
 .wtsp {
   background: #435b4d;
@@ -114,7 +113,6 @@ body {
   padding-left: 104px;
   padding-top: 108px;
 }
-
 
 .fst {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -305,169 +303,363 @@ body {
   margin-top: 130px;
 }
 
-/* *{
-        margin: 0;
-        padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 30px;
-        color: white;
-    } */
 footer {
   background: rgba(37, 70, 54, 1);
-
-  padding-top: 100px;
-  height: 308px;
+  padding-top: 30px;
+  /* padding-bottom: 20px;    */
+  margin-top: 100px;  
 }
+
 .container {
-  width: 1140px;
+  width: 90%;
+  max-width: 1140px;
   margin: auto;
   display: flex;
-  justify-content: space-around;
-  /* margin: 0;
-        padding: 0; */
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  gap: 0px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 24px;
   color: white;
+}
+
+.footer-content {
+  width: 100%; /* Make each content section full width on small screens */
+  max-width: 100px; /* Limit maximum width for large screens */
+  margin-top: 20px; /* Add margin between sections */
+  margin-left: 50px;
+  
 }
 
 .footer-content p {
-  width: 250px;
-  /* margin: auto; */
-  /* padding: 30px; */
-  font-size: 24px;
-  margin-left: 100px;
-  /* background-color: black; */
-}
-.ktug {
-  margin-top: 40px;
-  margin-left: 0px;
-}
-.phn {
-  margin-top: 60px;
-}
-.footer-content ul {
-  text-align: center;
-}
-.list {
-  padding: 0px;
+  font-size: 13px; /* Adjust font size for smaller screens */
+  text-align: center; /* Center align text */
   color: white;
-  list-style: none;
-  display: inline-block;
-  font-size: 10;
-  /* background-color: black; */
-}
-.list li {
-  width: auto;
-  text-align: center;
-  list-style-type: none;
-  /* padding: 10px; */
-  /* background-color: aqua; */
-  justify-content: space-around;
-}
-.pry {
-  margin-top: 10px;
-  margin-left: 50px;
-}
-.trms {
-  margin-top: 60px;
-  margin-left: 40px;
+  margin-top: 28px;
 }
 
-.social-icons {
-  text-align: center;
-  margin: 0;
+.list {
+  padding: 0;
+  list-style: none;
+  text-align: center; /* Center align list items */
 }
-.social-icons li {
-  display: flex;
-  text-align: center;
-  padding: 30px;
-}
-.social-icons i {
+
+.list li {
+  margin: 25px 10px 0px; /* Add vertical margin to list items */
   color: white;
-  font-size: 36px;
 }
 a {
   text-decoration: none;
   color: white;
+  font-size: 13px;
+  
+}
+
+.social-icons {
+  text-align: left;
+}
+
+.social-icons li {
+  /* display: inline-block; */
+  margin: 0px 100px 23px 0px;
+  list-style: none;
+}
+
+.social-icons i {
+  font-size: 20px; /* Increase social icon size for better visibility */
+  color: white;
 }
 
 .img5 {
+  width: 70px; /* Adjust image size */
+  height: auto; /* Ensure aspect ratio is maintained */
+  display: block;
+  margin: 30px auto 0px; /* Center align image and add bottom margin */
   background-color: white;
   border-radius: 50%;
-  width: 80x;
-  height: 80px;
-  /* top: 53px;
-        left: 2px; */
-  margin-top: 30px;
 }
+
 .last {
-  margin-left: 10px;
-  margin-top: 20px;
-  font-size: 24px;
-  height: 29px;
-  width: 104px;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .ph {
   /* width: 50px; */
   /* background-color: blue; */
   position: relative;
-  bottom: 20%;
+  bottom: 36%;
+  right: 60px; 
+  font-size: 20px;
+  
 }
 .mil {
   /* width: 50px; */
   /* background-color: blue; */
   position: relative;
-  bottom: 70%;
+  bottom: 52%;
+  right: 62px;
+  font-size: 20px;
 }
 
-@media only screen and (max-width: 768px) {
-  .navdiv div {
+@media only screen and (max-width: 800px) {
+  .navdiv {
     position: absolute;
     width: 100%;
+    /* height: 150px; */
     top: 0px;
-    left: 0;
-    right: 0;
+    left: 0px;
+    /* align-items: center; */
+    background-color: white;
+    gap: 0px;
+    overflow: hidden;
+    transition: all 0.5s;
+  }
+  .menu li {
+    display: block;
+    /* margin-top: 55px; */
+    margin-right: 0px;
+    margin-bottom: 10px;
+    background: #435b4d;
+    width: 156px;
+    height: 35px;
+    border-radius: 30px;
+  }
+  .menu {
+    transition: all 0.5s;
     flex-direction: column;
     text-align: center;
-    background-color: white;
-    gap: 20px;
-    overflow: hidden;
   }
-  .main a {
-    padding: 20px;
-    padding-top: 0;
-    color: black;
-    background: rgba(67, 91, 77, 1);
-    width: 174px;
-    height: 33px;
-    border-radius: 38px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgba(255, 255, 255, 1) !important;
-    font-family: Inter;
+  .menu li a {
+    font-family: Inter, sans-serif;
     font-size: 16px;
-    font-weight: 600;
-    line-height: 19px;
+    font-weight: 500;
+    line-height: 29px;
     letter-spacing: 0em;
     text-decoration: none;
+    color: rgba(255, 255, 255, 1);
   }
   .menu-icon {
     display: block;
+    cursor: pointer;
   }
-  .main {
-    transition: all 0.5s;
-    /* width: 80%; */
+}
+@media only screen and (max-width: 480px) {
+  .new {
+    /* text-align: center; */
+    height: 100%;
+    /* align-items: center; */
+    width: 100%;
+  }
+  .PARA {
+    /* align-items: center; */
+    /* margin-left: 0px; */
+    padding-bottom: 10px;
+    width: auto;
+    /* height: 500px; */
+    /* position: absolute; */
+    /* padding-left: 0px; */
+  }
+  .doc {
+    height: auto;
+    width: 100px;
+    
+  }
+  .hed {
+    /* margin-top: -100px; */
+    width: 350px;
+    position: sticky;
+    margin-left: -25px;
+  }
+  .img1 {
+    width: 259px;
+    height: 259px;
+    /* top: 380px; */
+    /* right: 500px; */
+    position: static;
+    margin-left: 0px;
+  }
+  .the {
+    margin-top: 300px;
+  }
+  .cont {
+    width: 100%;
+    text-align: left;
+    margin-left: 25px;
+  }
+  .but {
+    margin-top: 55px;
+    margin-left: 70px;
+    width: 350px;
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .join {
+    text-align: center;
+  }
+  .sec {
+    text-align: left;
+    margin-left: 5%;
+    font-size: 25px;
+  }
+  .blah {
+    text-align: center;
+  }
+  .img2 {
+    width: 414px;
+    height: 285px;
+    /* top: 954px; */
+    /* left: 21px; */
+    border-radius: 35px;
+    position: absolute;
+    margin: 0%;
+  }
+  .cont1 {
+    margin-top: 300px;
+    text-align: left;
+    align-items: center;
+    /* width: 100%; */
+    /* margin-right: 550px; */
+    margin-left: 30px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .join1 {
+    text-align: center;
+    margin-top: 0px;
   }
 
-  
-  .logo .img0 {
-    width: 50px; 
-    height: 50px; 
+  .img3 {
+    width: 414px;
+    height: 285px;
+    /* margin-top: 4px; */
+    /* margin-left: 200px; */
+    border-radius: 35px;
+    position: absolute;
   }
-  .main {
-    margin-right: 20px; 
+  .cont2 {
+    margin-top: 320px;
+    text-align: left;
+    align-items: center;
+    /* width: 600px; */
+    margin-left: 30px;
+    height: auto;
   }
-  
 }
+@media only screen and (max-width: 480px) {
+  .abtus {
+    text-align: center;
+    /* height: 700px; */
+    margin-left: 10px;
+    padding-top: 200px;
+  }
+  .trd {
+    align-items: left;
+    /* margin-top: 100px; */
+    margin-left: 0px;
+    font-size: 25px;
+    position: relative;
+  }
+  .img4 {
+    width: 414px;
+    height: 285px;
+    margin-top: 10px;
+    /* margin-left: 200px; */
+    border-radius: 35px;
+    position: absolute;
+  }
+  .cont3 {
+    margin-top: 330px;
+    text-align: left;
+    align-items: center;
+    margin-left: 30px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .container {
+    /* flex-direction: column; */
+    /* align-items: center;  */
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-content {
+    text-align: center;
+  }
+  .footer-content p {
+    font-size: 10px; /* Adjust font size for smaller screens */
+    text-align: center; /* Center align text */
+    color: white;
+    margin-top: 18px;
+    margin-left: 10px;
+  }
+  
+  .list {
+    padding: 0;
+    width: max-content;
+    list-style: none;
+    text-align: center; /* Center align list items */
+  }
+  
+  .list li {
+    margin: 10px 0 0px; /* Add vertical margin to list items */
+    color: white;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    
+  }
+  
+  .social-icons {
+    text-align: left;
+  }
+  
+  .social-icons li {
+    /* display: inline-block; */
+    margin: 0px 100px 13px 0px;
+    list-style: none;
+  }
+  
+  .social-icons i {
+    font-size: 14px; /* Increase social icon size for better visibility */
+    color: white;
+  }
+  
+  .img5 {
+    width: 30px; /* Adjust image size */
+    height: auto; /* Ensure aspect ratio is maintained */
+    display: block;
+    margin: 30px 0px 0px; /* Center align image and add bottom margin */
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+  .last {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  
+  .ph {
+    /* width: 50px; */
+    /* background-color: blue; */
+    position: relative;
+    bottom: 36%;
+    right: 60px; 
+    font-size: 10px;
+    
+  }
+  .mil {
+    /* width: 50px; */
+    /* background-color: blue; */
+    position: relative;
+    bottom: 52%;
+    right: 62px;
+    font-size: 10px;
+  }
+}
+
