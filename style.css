@@ -443,7 +443,7 @@ a {
     /* margin-left: -20px; */
   }
 }
-@media only screen and (max-width: 411px) {
+@media only screen and (max-width: 481px) {
   .new {
     /* text-align: center; */
     height: 100%;
@@ -504,7 +504,7 @@ a {
     justify-content: space-between;
   }
 }
-@media only screen and (max-width: 411px) {
+@media only screen and (max-width: 481px) {
   .join {
     text-align: center;
   }
@@ -535,7 +535,7 @@ a {
     /* flex-wrap: wrap; */
   }
 }
-@media only screen and (max-width: 411px) {
+@media only screen and (max-width: 481px) {
   .join1 {
     text-align: center;
     margin-top: 0px;
@@ -558,7 +558,7 @@ a {
     height: auto;
   }
 }
-@media only screen and (max-width: 411px) {
+@media only screen and (max-width: 481px) {
   .abtus {
     text-align: center;
     height: 600px;
