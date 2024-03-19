@@ -450,7 +450,7 @@ a {
   .PARA {
     /* align-items: center; */
     /* margin-left: 0px; */
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     width: auto;
     /* height: 500px; */
     /* position: absolute; */
@@ -462,10 +462,17 @@ a {
   }
   .hed {
     /* margin-top: -100px; */
-    width: 350px;
-    position: sticky;
-    margin-left: -23%;
+    width: 80%;
+    position: static;
+    margin-left: -13%;
     flex-wrap: wrap;
+    align-items: center;
+    
+  }
+  .fst{
+    font-size: 23px;
+    font-weight: 700;
+    text-align: center;
   }
   .img1 {
     width: 259px;
@@ -473,10 +480,10 @@ a {
     /* top: 380px; */
     /* right: 500px; */
     position: static;
-    margin-left: -22%;
+    margin-left: -35%;
   }
   .the {
-    margin-top: 300px;
+    margin-top: 230px;
   }
   .cont {
     width: 100%;
@@ -487,6 +494,7 @@ a {
   .but {
     margin-top: 55px;
     margin-left: 36px;
+    margin-bottom: 0px;
     width: 350px;
     gap: 20px;
     display: flex;
@@ -506,7 +514,7 @@ a {
     text-align: center;
   }
   .img2 {
-    width: 414px;
+    width: 400px;
     height: 285px;
     /* top: 954px; */
     /* left: 21px; */
@@ -531,15 +539,15 @@ a {
   }
 
   .img3 {
-    width: 414px;
+    width: 400px;
     height: 285px;
-    margin-top: 24px;
+    margin-top: 62px;
     /* margin-left: 200px; */
     border-radius: 35px;
     position: absolute;
   }
   .cont2 {
-    margin-top: 320px;
+    margin-top: 380px;
     text-align: left;
     align-items: center;
     /* width: 600px; */
@@ -562,7 +570,7 @@ a {
     position: relative;
   }
   .img4 {
-    width: 414px;
+    width: 400px;
     height: 285px;
     margin-top: 10px;
     /* margin-left: 200px; */
