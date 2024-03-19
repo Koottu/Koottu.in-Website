@@ -420,7 +420,7 @@ a {
     width: 156px;
     height: 35px;
     border-radius: 30px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
     
   }
   .menu {
@@ -440,7 +440,7 @@ a {
   .menu-icon {
     display: block;
     cursor: pointer;
-    margin-left: -20px;
+    /* margin-left: -20px; */
   }
 }
 @media only screen and (max-width: 480px) {
@@ -517,7 +517,7 @@ a {
     text-align: center;
   }
   .img2 {
-    width: 400px;
+    width: 380px;
     height: 285px;
     /* top: 954px; */
     /* left: 21px; */
@@ -542,7 +542,7 @@ a {
   }
 
   .img3 {
-    width: 400px;
+    width: 380px;
     height: 285px;
     margin-top: 62px;
     /* margin-left: 200px; */
@@ -575,8 +575,8 @@ a {
   .img4 {
     width: 380px;
     height: 285px;
-    margin-top: 10px;
-    /* margin-left: 200px; */
+    /* margin-top: 10px; */
+    margin-right: 20px;
     border-radius: 35px;
     position: absolute;
   }
@@ -584,7 +584,7 @@ a {
     margin-top: 330px;
     text-align: left;
     align-items: center;
-    margin-left: 30px;
+    margin-left: 10px;
     height: 100%;
     width: 100%;
   }
