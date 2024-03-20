@@ -54,9 +54,13 @@ body {
   letter-spacing: 0em;
   text-decoration: none;
 }
+.menu-icon{
+  display: none;
+}
 .menu-icon i {
   font-size: 30px;
   cursor: pointer;
+  
 }
 .wtsp {
   background: #435b4d;
@@ -234,7 +238,7 @@ body {
 }
 footer {
   background: rgba(37, 70, 54, 1);
-  padding-top: 30px;
+  /* padding-top: 30px; */
   margin-top: 100px;
 }
 .container {
@@ -251,7 +255,7 @@ footer {
   width: 100%;
   max-width: 100px;
   margin-top: 20px;
-  margin-left: 50px;
+  margin-left: 30px;
 }
 .footer-content p {
   font-size: 13px;
@@ -277,7 +281,7 @@ a {
   text-align: left;
 }
 .social-icons li {
-  margin: 0px 100px 23px 0px;
+  margin: 25px 100px 23px 0px;
   list-style: none;
 }
 .social-icons i {
@@ -478,6 +482,7 @@ a {
     margin: 0;
   }
   .footer-content {
+    
     text-align: center;
     /* margin: 0; */
   }
@@ -486,7 +491,9 @@ a {
     text-align: center;
     color: white;
     margin-top: 18px;
-    margin-left: 50px;
+    margin-left: 40px;
+    
+    
   }
   .list {
     padding: 0;
@@ -495,19 +502,20 @@ a {
     text-align: center;
   }
   .list li {
-    margin: 10px 0 0px;
+    margin: 10px 0px 0px 25px;
     color: white;
   }
   a {
     text-decoration: none;
     color: white;
     font-size: 10px;
+    
   }
   .social-icons {
     text-align: center;
   }
   .social-icons li {
-    margin: 0px 50px 13px 50px;
+    margin: 0px 0px 13px -20px;
     list-style: none;
   }
   .social-icons i {
@@ -521,11 +529,12 @@ a {
     position: relative;
     background-color: white;
     border-radius: 50%;
-    margin-left: 0px;
+    margin-left: 20px;
   }
   .last {
     text-align: center;
     margin-top: 10px;
+    margin-left: 15px;
   }
   .ph {
     position: relative;
