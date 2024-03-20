@@ -479,13 +479,14 @@ a {
   }
   .footer-content {
     text-align: center;
+    /* margin: 0; */
   }
   .footer-content p {
     font-size: 10px;
     text-align: center;
     color: white;
     margin-top: 18px;
-    margin-left: 10px;
+    margin-left: 50px;
   }
   .list {
     padding: 0;
@@ -503,10 +504,10 @@ a {
     font-size: 10px;
   }
   .social-icons {
-    text-align: left;
+    text-align: center;
   }
   .social-icons li {
-    margin: 0px -50px 13px -50px;
+    margin: 0px 50px 13px 50px;
     list-style: none;
   }
   .social-icons i {
@@ -525,7 +526,6 @@ a {
   .last {
     text-align: center;
     margin-top: 10px;
-    margin-left: -10px;
   }
   .ph {
     position: relative;
