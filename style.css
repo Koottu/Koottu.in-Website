@@ -18,9 +18,15 @@ header {
   width: 100%;
   margin: 0 auto;
   display: flex;
-  align-items: flex-start;
-  justify-content: left;
+  /* align-items: flex-start;  */
+  justify-content: space-between;
   box-shadow: 0px 7px 10px rgba(17, 17, 17, 0.5);
+  /* position: fixed; */
+  background-color: white;
+}
+.con {
+  display: flex;
+  /* justify-content: space-around; */
 }
 .logo {
   width: 54px;
@@ -43,6 +49,19 @@ nav ul li a {
   text-align: left;
   color: black;
 }
+.wp {
+  display: flex;
+  width: 5%;
+  align-items: center;
+  color: #329b00;
+  font-size: 30px;
+}
+.us {
+  /* color: #329b00;
+  font-size: 30px; */
+  /* list-style: none; */
+}
+
 .main {
   display: flex;
   width: 100%;
@@ -185,7 +204,7 @@ nav ul li a {
 }
 .trd {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .im2 {
   width: 255px;
@@ -219,7 +238,7 @@ nav ul li a {
   font-weight: 300;
   line-height: 18.79px;
   text-align: center;
-  gap: 50px;
+  gap: 10px;
 }
 .names,
 .age,
@@ -270,6 +289,16 @@ nav ul li a {
   font-weight: 500;
   line-height: 20.23px;
   text-align: left;
+}
+.next {
+  font-size: 30px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: rgba(243, 249, 219, 1);
+  height: fit-content;
+  width: auto;
+  border-radius: 60px;
+  margin-top: 8%;
+  padding: 10px;
 }
 footer {
   background: linear-gradient(
@@ -384,4 +413,204 @@ footer {
   background-color: white;
   border-radius: 50%;
   margin-right: 100px;
+}
+.menu-btn{
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+#click{
+  display: none;
+}
+.wtsp-btn{
+  /* display: none; */
+}
+.wpc{
+  display: none;
+  /* display: flex;
+  justify-content: center; */
+}
+/* #click2{
+  display: none;
+} */
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    
+    /* background-color: rgb(197, 20, 20); */
+  }
+  #click:checked ~.menu-btn :before{
+    content: "\f00d";
+  }
+  
+  .menu-list{
+    position: fixed;
+    margin: 0;
+    top: 50px;
+    left: -100%;
+    background : #fff;
+    height: 100%;
+    width: 50%;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease;
+
+  }
+  #click:checked ~ .menu-list{
+    left: 0%;
+    
+  }
+  nav ul li{
+    margin: 80px 0;
+    display: block;
+    text-align: center;
+    /* left: -100%; */
+    /* color: #fff; */
+  }
+  nav ul li a{
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .menu-btn{
+    display: block;
+    padding: 10px;
+  }
+
+  .main{
+    display: none;
+  }
+  .logo{
+    display: none;
+  }
+  .wtsp-btn {
+    display: block;
+    /* padding: 10%; */
+    /* background-color: #329b00; */
+    
+  }
+  .wpc{
+    /* display: block; */
+  }
+  .wtsp-btn{
+    position: fixed;
+    margin: 0;
+    top: 0px;
+    right: -100%;
+    background : #db1212;
+    height: 100%;
+    width: 50%;
+    display: block;
+    text-align: center;
+    transition: all 0.8s ease;
+
+  }
+  #click2:checked ~ .wtsp-btn{
+    right: 0%;
+    
+  }
+  #click2:checked ~.wtsp-btn :before{
+    content: "\f00d";
+  }
+  
+  
+
+}
+@media only screen and (max-width: 600px) {
+  .ab{
+    display: none;
+  }
+  .card:before{
+    display: none;
+  }
+  .card:hover  {
+    display: none;
+  }
+  .card:before{
+    display: none;  
+  }
+  .card:hover:before{
+    /* display: none; */
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .hed h1{
+    margin-left: 25px;
+    margin-top: 22%;
+    /* font-family: Inter; */
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left;
+
+  }
+  .im1{
+    width: 158px;
+    height: 151px;
+    margin-top: 39px;
+    left: 12px;
+    gap: 0px;
+    border-radius: 30px;
+    opacity: 0px;
+
+  }
+  .sec p{
+    margin-top: 25px;  
+    font-family: Jost;
+    font-size: 23px;
+    font-weight: 200;
+    line-height: 38.79px;
+    text-align: left;
+    
+
+  }
+  .im2{
+    display: none;
+  }
+  #a1{
+    display: none;
+  }
+  .profile-card{
+    margin-top: 10px;
+    margin-left: 20px;
+    
+
+  }
+ 
+  
+  .next{
+    position: absolute;
+    margin-top: 300px;
+  }
+  
+
+}
+@media only screen and (max-width: 600px){
+  .footer-content,#shaz,#phone{
+    position: relative;
+    margin-left: -100px;
+    /* margin-bottom: 0px; */
+    padding-left: 10px;
+    font-weight: 10 px;
+  }
+  .three{
+    position: static;
+    /* margin-top: 5px; */
+    margin-left: 50px;
+  }
+  footer{
+    height: 100%;
+    width: 100%;
+  }
+  .contain{
+    margin-top: 10px;
+    margin-right: 5%;
+    
+  }
+  .lstlogo{
+    position: static;
+    margin-top: -40px;
+  }
+  
+  
 }

@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,25 +26,44 @@
   <body>
     <header>
       <div class="container">
-        <img
-          class="logo"
-          src="./images/logo.png"
-          alt="Description of the image"
-        />
-        <nav>
-          <ul class="menu-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Join Koottu</a></li>
-            <!-- <li><a href="#"></a></li> -->
-          </ul>
-        </nav>
+        <div class="con">
+          <img
+            class="logo"
+            src="./images/logo.png"
+            alt="Description of the image"
+          />
+          <nav>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="menu-list">
+              
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Join Koottu</a></li>
+            </ul>
+          </nav>
+        </div>
+          <div class="wp">
+            <input type="checkbox" id="click2"> 
+            <label for="click2" class="wtsp-btn">
+              <i class="fa fa-whatsapp" aria-hidden="true"></i> 
+            </label>
+              <div class="wpc">
+              <i class="fa fa-whatsapp" aria-hidden="true"></i>
+              <h6>Whatsapp</h6>
+              <i class="fa-solid fa-phone"></i>
+              <p class="phn">+91 8848129990</p>
+              </div>
+          
+          </div>
       </div>
     </header>
     <section class="main">
       <div class="card">
-        <img src="./images/img1.jpeg" alt="Description of the image" />
+        <img class="ab" src="./images/img1.jpeg" alt="Description of the image" />
         <div class="info">
           <h1>ELDERLYCARE</h1>
           <img class="crd1" src="./images/card1.png" alt="card" />
@@ -54,7 +75,7 @@
       </div>
 
       <div class="card">
-        <img src="./images/img2.jpeg" alt="Description of the image" />
+        <img class="ab" src="./images/img2.jpeg" alt="Description of the image" />
         <div class="info">
           <h1>CHILDCARE</h1>
           <img class="crd2" src="./images/card3.png" alt="card" />
@@ -66,7 +87,7 @@
       </div>
 
       <div class="card">
-        <img src="./images/img3.jpeg" alt="Description of the image" />
+        <img class="ab" src="./images/img3.jpeg" alt="Description of the image" />
         <div class="info">
           <h1>HOUSEKEEPING</h1>
           <img class="crd3" src="./images/card2.png" alt="card" />
@@ -91,7 +112,24 @@
       </div>
       <div class="trd">
         <img class="im2" src="./images/img5.jpeg" alt="edc" />
-        <div class="profile-card">
+        <div class="profile-card" id="a1">
+          <div class="pc">
+            <img class="profile-picture" src="./images/id.png" alt="id" />
+            <div class="detls">
+              <div class="names">
+                <p>Name: <span>Mariyam</span></p>
+              </div>
+              <div class="age"><p>Age: 22 years</p></div>
+              <div class="salary"><p>Salary: ₹600.00</p></div>
+            </div>
+          </div>
+          <div class="exp"><p>Experience: 4 Years elderlycare</p></div>
+          <div class="but">
+            <button class="call"><a href="tel:+1234567890">Call Now</a></button>
+          </div>
+        </div>
+
+        <div class="profile-card" >
           <div class="pc">
             <img class="profile-picture" src="./images/id.png" alt="id" />
             <div class="detls">
@@ -124,22 +162,8 @@
             <button class="call"><a href="tel:+1234567890">Call Now</a></button>
           </div>
         </div>
-
-        <div class="profile-card">
-          <div class="pc">
-            <img class="profile-picture" src="./images/id.png" alt="id" />
-            <div class="detls">
-              <div class="names">
-                <p>Name: <span>Mariyam</span></p>
-              </div>
-              <div class="age"><p>Age: 22 years</p></div>
-              <div class="salary"><p>Salary: ₹600.00</p></div>
-            </div>
-          </div>
-          <div class="exp"><p>Experience: 4 Years elderlycare</p></div>
-          <div class="but">
-            <button class="call"><a href="tel:+1234567890">Call Now</a></button>
-          </div>
+        <div class="next">
+          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
         </div>
       </div>
     </section>
@@ -158,7 +182,7 @@
       </div>
       <div class="trd">
         <img class="im2" src="./images/img9.jpeg" alt="edc" />
-        <div class="profile-card">
+        <div class="profile-card" id="a1">
           <div class="pc">
             <img class="profile-picture" src="./images/id.png" alt="id" />
             <div class="detls">
@@ -207,6 +231,9 @@
           <div class="but">
             <button class="call"><a href="tel:+1234567890">Call Now</a></button>
           </div>
+        </div>
+        <div class="next">
+          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
         </div>
       </div>
     </section>
@@ -225,7 +252,7 @@
       </div>
       <div class="trd">
         <img class="im2" src="./images/img7.png" alt="edc" />
-        <div class="profile-card">
+        <div class="profile-card" id="a1">
           <div class="pc">
             <img class="profile-picture" src="./images/id.png" alt="id" />
             <div class="detls">
@@ -274,6 +301,9 @@
           <div class="but">
             <button class="call"><a href="tel:+1234567890">Call Now</a></button>
           </div>
+        </div>
+        <div class="next">
+          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
         </div>
       </div>
     </section>
@@ -303,5 +333,16 @@
         </div>
       </div>
     </footer>
+    <!-- <script>
+      function menutoggle() {
+        var MenuItems = document.getElementById("MenuItems");
+
+        if (MenuItems.style.maxHeight === "0px") {
+          MenuItems.style.maxHeight = "500px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script> -->
   </body>
 </html>
