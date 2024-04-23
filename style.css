@@ -516,7 +516,7 @@ footer {
   
 
 }
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 440px) {
   .ab{
     display: none;
   }
@@ -534,7 +534,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 470px){
+@media only screen and (max-width: 440px){
   .hed h1{
     margin-left: 25px;
     margin-top: 22%;
@@ -572,12 +572,14 @@ footer {
   }
   .profile-card{
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 10px;
     width: 180px;
     height: 170px;
     border-radius: 15px;
-    border: 1px;
-    opacity: 0px;
+    /* border: 1px; */
+    /* opacity: 0px; */
+    gap: 0px;
+    box-shadow: 0.3px;
   }
   .profile-picture{
     width: 47.37px;
@@ -665,7 +667,7 @@ footer {
   
 
 }
-@media only screen and (max-width: 470px){
+@media only screen and (max-width: 440px){
   .footer-content,#shaz,#phone{
     position: relative;
     margin-left: -90px;
@@ -688,8 +690,10 @@ footer {
     
   }
   .lstlogo{
-    position: static;
+    position: relative;
+    display: inline;
     margin-top: -20px;
+    margin-left: -7%;
    
   }
   .lgo{
