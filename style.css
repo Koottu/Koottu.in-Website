@@ -567,19 +567,26 @@ footer {
   .im2{
     display: none;
   }
+  .trd{
+    /* background-color: aqua; */
+    justify-content: flex-start;
+    padding: 20px 20px 20px 20px;
+    
+    gap: 0px;
+  }
   #a1{
     display: none;
   }
   .profile-card{
-    margin-top: 10px;
-    margin-left: 10px;
+    /* padding: 20px 20px 0 0; */
+    /* margin-left: 20px; */
     width: 180px;
     height: 170px;
     border-radius: 15px;
-    /* border: 1px; */
+    /* border: 1px;  */
     /* opacity: 0px; */
-    gap: 0px;
-    box-shadow: 0.3px;
+    /* gap: 0px; */
+    /* box-shadow: none; */
   }
   .profile-picture{
     width: 47.37px;
@@ -592,15 +599,15 @@ footer {
 
   }
   .detls {
-    /* width: 10%; */
-    /* height: 10%; */
+    width: 100%;
+    height: 100%;
     margin-top: 10px;
     font-family: "Jost", sans-serif;
     font-size: 9px;
     font-weight: 300;
-    line-height: 15.79px;
+    line-height: 18.79px;
     text-align: center;
-    /* gap: 10px; */
+    gap: 10px;
     
   }
   .names,
@@ -615,33 +622,30 @@ footer {
     /* margin-left: 10px; */
 }
   .exp {
-    
+    margin-left: 10px;
     background: rgba(243, 249, 219, 1);
-    border-radius: 5px;
-    width: 170px;
-    height: 30px;
-    /* margin-bottom: 100px; */
-    
+    width: 148px;
+    height: 37px;
+    border-radius: 24px;
+    /* background-color: black; */
     
     
   }
   .exp p {
-    /* padding: -120px; */
+    padding: 5px 5px 80px 10px;
+    /* background-color: #329b00;  */
     font-family: Jost;
     font-size: 9px;
     font-weight: 400;
-    line-height: 13.01px;
+    line-height: 20.23px;
     text-align: left;
-    /* margin-top: 15%; */
-    /* margin-top: -70px; */
-    /* display: inline; */
-    
+    /* position: absolute; */
   }
   .call {
     width: 73px;
     height: 19px;
     top: 633px;
-    left: 56px;
+    margin-left: 50px;
     gap: 0px;
     border-radius: 6px;
     opacity: 0px;
@@ -654,7 +658,7 @@ footer {
     font-size: 8px;
     font-weight: 500;
     line-height: 20.23px;
-    text-align: left;
+    text-align: center;
     color: #fff;
   }
   
@@ -662,6 +666,7 @@ footer {
   .next{
     position: absolute;
     margin-top: 200px;
+    margin-left: 40%;
     font-size: 15px;
   }
   
