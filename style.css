@@ -67,6 +67,7 @@ nav ul li a {
   width: 100%;
   justify-content: space-around;
   margin-top: 70px;
+  
 }
 .card {
   width: 410px;
@@ -77,11 +78,17 @@ nav ul li a {
   position: relative;
   display: flex;
   align-items: flex-start;
+  
+  
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
   transition: 0.5s ease-in-out;
+  border: 5px solid black;
+  
 }
 .card:hover {
   transform: translatex(10px);
+  
+  
 }
 .card:before {
   content: "";
@@ -91,7 +98,7 @@ nav ul li a {
   display: block;
   width: 100%;
   height: 100%;
-
+  
   background-color: white;
   z-index: 2;
   transition: 0.5s all;
@@ -99,6 +106,7 @@ nav ul li a {
 }
 .card:hover:before {
   opacity: 1;
+  
 }
 .card img {
   width: 410px;
@@ -114,10 +122,12 @@ nav ul li a {
   z-index: 3;
   opacity: 0;
   transform: translateY(30px);
+  
 }
 .card:hover .info {
   opacity: 1;
   transform: translateY(0px);
+  
 }
 .card .info h1 {
   width: 100%;
@@ -131,6 +141,7 @@ nav ul li a {
   font-weight: 700;
   line-height: 57.8px;
   text-align: center;
+  
 }
 .card .info .crd1 {
   width: 237px;
@@ -138,6 +149,7 @@ nav ul li a {
   top: 8%;
   left: 65px;
   opacity: 0px;
+  
 }
 .card .info .crd2 {
   width: 202px;
@@ -146,6 +158,7 @@ nav ul li a {
   left: 79px;
   gap: 0px;
   opacity: 0px;
+  
 }
 .card .info .crd3 {
   width: 243px;
@@ -224,7 +237,7 @@ nav ul li a {
   max-width: 300px;
   width: 270px;
   height: auto;
-  margin-right: 50px;
+  margin-right: 60px;
 }
 .pc {
   display: flex;
@@ -299,6 +312,10 @@ nav ul li a {
   border-radius: 60px;
   margin-top: 8%;
   padding: 10px;
+}
+.next button{
+  font-size: 30px;
+  border: none ;
 }
 footer {
   background: linear-gradient(
@@ -426,9 +443,9 @@ footer {
   /* display: none; */
 }
 .wpc{
-  display: none;
-  /* display: flex;
-  justify-content: center; */
+  display: block;
+  display: flex;
+  justify-content: center;
 }
 /* #click2{
   display: none;
@@ -478,7 +495,9 @@ footer {
   }
 
   .main{
-    display: none;
+    display: flex;
+    background-color: none;
+    
   }
   .logo{
     display: none;
@@ -490,7 +509,7 @@ footer {
     
   }
   .wpc{
-    /* display: block; */
+    display: none;
   }
   .wtsp-btn{
     position: fixed;
@@ -518,20 +537,106 @@ footer {
 }
 @media only screen and (max-width: 440px) {
   .ab{
-    display: none;
+    display: block;
+    
   }
+  .card img{
+    width: 353px;
+    height: 230px;
+    border-radius: 29px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
   .card:before{
-    display: none;
+    /* display: block; */
   }
   .card:hover  {
-    display: none;
+    /* display: block; */
   }
   .card:before{
-    display: none;  
+    /* display: block; */
+      
   }
   .card:hover:before{
-    /* display: none; */
+    /* display: none;  */
   }
+  .card{
+    width: 353px;
+    height: 230px;
+    
+    /* background-color: #329b00; */
+    /* background-color: none; */
+  }
+  .card .info h1{
+    width: 288px;
+    height: 29px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .card .info .crd1{
+    width: 85px;
+    height: 92px;
+    top: 22px;
+    left: 120px;
+    gap: 0px;
+    opacity: 0px;
+
+  }
+  .card .info .crd2{
+    width: 85px;
+    height: 92px;
+    top: 52px;
+    left: 120px;
+    gap: 0px;
+    opacity: 0px;
+
+  }
+  .card .info .crd3{
+    width: 85px;
+    height: 92px;
+    top: 42px;
+    left: 120px;
+    gap: 0px;
+    opacity: 0px;
+
+  }
+
+  .card .info p {
+    margin-top: 100px;
+    font-family: "jost", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 24.68px;
+    text-align: left;
+
+  }
+  .card.info{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 4rem;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  /* height: 110px; */
+}
+
+.card{
+  scroll-snap-align: start;
+}
+
+.info{
+  border-radius: 10px;
+  object-fit: fill;
+  height: 70px;
+}
+
+.card::-webkit-scrollbar {
+  display: block;
+}
 }
 
 @media only screen and (max-width: 440px){
