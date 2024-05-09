@@ -63,14 +63,15 @@
     border: 1px solid black;
     width: 200px;
     height: 50px; */
-    margin-right: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
     margin-top: 10px;
   }
 
   .ttt li{
     /* display: inline-block; */
     position: relative;
-    border-radius: 2px;
+    border-radius: 10px;
     border: 1px solid black;
     width: 200px;
     height: auto;
@@ -86,6 +87,7 @@
     font-size: 20px;
     font-weight: 500;
     background-color: #fff;
+    border-radius: 10px;
   }
   .ttt li ul.dropdown li {
     display: block;
@@ -98,7 +100,7 @@
     display: none;
   }
   .ttt li a:hover {
-    background-color: beige;
+    background-color: rgb(165, 165, 144);
 
   }
   .ttt li:hover ul.dropdown {
@@ -113,10 +115,11 @@
     border-radius: 5px;
     border: 1px solid black;
     width: 160px;
-    height: auto;
+    height: 30px;
     margin-right: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
     list-style: none;
+    padding: 10px 10px 30px 30px;
   }
   .tik li a{
     
@@ -127,8 +130,8 @@
   .profile-card {
     background-color: #fff;
     border-radius: 30px;
-    box-shadow: 5px 5px 5px 5px rgba(0.1, 0, 0, 0.1);
-  
+    /* box-shadow: 5px 5px 5px 5px rgba(0.1, 0, 0, 0.1); */
+    border: 1px solid black;
     text-align: left;
     max-width: 600px;
     width: 528px;
