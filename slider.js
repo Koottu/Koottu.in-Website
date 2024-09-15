@@ -25,3 +25,4 @@ dots.forEach((dot, index) => {
 
 // Initialize: show the first card
 showCard(currentIndex);
+

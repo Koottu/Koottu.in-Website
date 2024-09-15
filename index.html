@@ -14,7 +14,7 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
   <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
-  <script src="slider.js"></script>
+  
 
   <title>Koottu.in - Where Every Home Finds Care and Comfort</title>
 </head>
@@ -55,29 +55,31 @@
   </div>
   </header>
   <div class="slider-container">
-    <div class="cardm">
-      <h1>ELDERLYCARE</h1>
-      <img class="crd1m" src="./images/card1.png" alt="card" />
-      <p>We help seniors with personalized support, including medication reminders and companionship, prioritizing dignity.</p>
-    </div>
+    <div class="card-wrapper">
+      <div class="cardm">
+        <h1>ELDERLYCARE</h1>
+        <img class="crd1m" src="./images/card1.png" alt="card" />
+        <p>We help seniors with personalized support, including medication reminders and companionship, prioritizing dignity.</p>
+      </div>
 
-    <div class="cardm">
-      <h1>CHILDCARE</h1>
-      <img class="crd1m" src="./images/card2.png" alt="card" />
-      <p>Providing quality care and support for children with personalized attention to their educational and emotional needs.</p>
-    </div>
+      <div class="cardm">
+        <h1>CHILDCARE</h1>
+        <img class="crd1m" src="./images/card2.png" alt="card" />
+        <p>Providing quality care and support for children with personalized attention to their educational and emotional needs.</p>
+      </div>
 
-    <div class="cardm">
-      <h1>MEDICARE</h1>
-      <img class="crd1m" src="./images/card3.png" alt="card" />
-      <p>Helping individuals manage their health with regular checkups, medication management, and medical consultations.</p>
+      <div class="cardm">
+        <h1>MEDICARE</h1>
+        <img class="crd1m" src="./images/card3.png" alt="card" />
+        <p>Helping individuals manage their health with regular checkups, medication management, and medical consultations.</p>
+      </div>
     </div>
 
     <!-- Dots for navigation -->
     <div class="dots">
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
+      <span class="dot" onclick="moveSlide(0)"></span>
+      <span class="dot" onclick="moveSlide(1)"></span>
+      <span class="dot" onclick="moveSlide(2)"></span>
     </div>
   </div>
 
@@ -423,17 +425,7 @@
       </div> -->
     </div>
   </footer>
-  <!-- <script>
-      function menutoggle() {
-        var MenuItems = document.getElementById("MenuItems");
-
-        if (MenuItems.style.maxHeight === "0px") {
-          MenuItems.style.maxHeight = "500px";
-        } else {
-          MenuItems.style.maxHeight = "0px";
-        }
-      }
-    </script> -->
+  <script src="/slider.js"></script>
 </body>
 
 </html>
