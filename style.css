@@ -462,11 +462,10 @@ footer {
   display: none;
 } */
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 576px) {
   .container {
     width: 100%;
-    
-    /* background-color: rgb(197, 20, 20); */
+    box-shadow: 0px 0px;
   }
   #click:checked ~.menu-btn :before{
     content: "\f00d";
@@ -513,27 +512,15 @@ footer {
   .logo{
     display: none;
   }
-  .wtsp-btn {
-    display: block;
-    /* padding: 10%; */
-    /* background-color: #329b00; */
-    
-  }
   .wpc{
     display: none;
   }
-  .wtsp-btn{
-    position: fixed;
-    margin: 0;
-    top: 0px;
-    right: -100%;
-    background : #db1212;
-    height: 100%;
-    width: 50%;
-    display: block;
-    text-align: center;
-    transition: all 0.8s ease;
-
+  .wp{
+    display: flex;
+    width: 10%;
+    align-items: center;
+    color: #329b00;
+    font-size: 30px;
   }
   #click2:checked ~ .wtsp-btn{
     right: 0%;
@@ -883,3 +870,8 @@ footer {
   background-color: #717171;
 }
 /* mobile view card */
+@media only screen and (min-width: 576px){
+  .slider-container{
+    display: none;
+  }
+}
