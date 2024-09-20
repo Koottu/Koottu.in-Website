@@ -59,11 +59,6 @@ nav ul li a {
 #click2{
   display: none;
 }
-.us {
-  /* color: #329b00;
-  font-size: 30px; */
-  /* list-style: none; */
-}
 
 .main {
   display: flex;
@@ -228,6 +223,8 @@ nav ul li a {
   display: flex;
   justify-content: space-around;
   overflow-x: auto;
+  gap: 15px;
+  padding: 15px;
 }
 .im2 {
   width: 255px;
@@ -280,7 +277,7 @@ nav ul li a {
   width: 138px;
   height: 37px;
   border-radius: 15px;
-  margin-top: 10px;
+  margin: 10px;
   margin-left: 65px;
 }
 .call a {
@@ -309,7 +306,7 @@ nav ul li a {
 .exp p {
   padding: 20px;
   font-family: Jost;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   line-height: 20.23px;
   text-align: left;
@@ -354,10 +351,8 @@ footer {
 }
 .fotrmain {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-
-/*  */
 
 .footer-content {
   width: 50%;
@@ -439,7 +434,6 @@ footer {
   margin-top: 80px;
   background-color: white;
   border-radius: 50%;
-  /* margin-right: 20px; */
 }
 .menu-btn{
   display: none;
@@ -449,17 +443,11 @@ footer {
 #click{
   display: none;
 }
-.wtsp-btn{
-  /* display: none; */
-}
 .wpc{
   display: block;
   display: flex;
   justify-content: center;
 }
-/* #click2{
-  display: none;
-} */
 
 @media only screen and (max-width: 576px) {
   .container {
@@ -491,8 +479,7 @@ footer {
     margin: 80px 0;
     display: block;
     text-align: center;
-    /* left: -100%; */
-    /* color: #fff; */
+
   }
   nav ul li a{
     font-size: 30px;
@@ -547,25 +534,9 @@ footer {
     left: 0;
   }
 
-  .card:before{
-    /* display: block; */
-  }
-  .card:hover  {
-    /* display: block; */
-  }
-  .card:before{
-    /* display: block; */
-      
-  }
-  .card:hover:before{
-    /* display: none;  */
-  }
   .card{
     width: 353px;
     height: 230px;
-    
-    /* background-color: #329b00; */
-    /* background-color: none; */
   }
   .card .info h1{
     width: 288px;
