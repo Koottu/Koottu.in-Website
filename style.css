@@ -63,7 +63,7 @@ nav ul li a {
 .main {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 70px;
   padding: 10px;
   overflow-x: auto;
@@ -470,7 +470,7 @@ footer {
     display: block;
     text-align: left;
     transition: all 0.3s ease;
-
+    z-index: 1;
   }
   #click:checked ~ .menu-list{
     left: 0%;
