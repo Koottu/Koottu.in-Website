@@ -4,16 +4,19 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
 body {
   width: 100%;
   min-height: 100vh;
   background: rgba(255, 255, 255, 1);
 }
+
 header {
   width: 100%;
   height: 64px;
   color: black;
 }
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -24,26 +27,32 @@ header {
   /* position: fixed; */
   background-color: white;
 }
+
 .con {
   display: flex;
   /* justify-content: space-around; */
 }
+
 .logo {
   width: 54px;
   height: 55px;
 }
+
 .logom {
   width: 54px;
   height: 55px;
 }
+
 nav ul li {
   list-style: none;
   margin-left: 40px;
   display: inline;
 }
+
 .menu-list {
   margin-top: 18px;
 }
+
 nav ul li a {
   text-decoration: none;
   font-family: "Jost", sans-serif;
@@ -53,6 +62,7 @@ nav ul li a {
   text-align: left;
   color: black;
 }
+
 .wp {
   display: flex;
   width: 5%;
@@ -60,10 +70,12 @@ nav ul li a {
   color: #329b00;
   font-size: 30px;
 }
-.moblogo{
+
+.moblogo {
   display: none;
 }
-#click2{
+
+#click2 {
   display: none;
 }
 
@@ -75,6 +87,7 @@ nav ul li a {
   padding: 10px;
   overflow-x: auto;
 }
+
 .card {
   width: 390px;
   height: 440px;
@@ -88,7 +101,7 @@ nav ul li a {
   /* border-radius: 10px; */
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
   transition: 0.5s ease-in-out;
-  
+
 }
 
 .card:before {
@@ -105,10 +118,12 @@ nav ul li a {
   transition: 0.5s all;
   opacity: 0;
 }
+
 .card:hover:before {
   opacity: 1;
-  
+
 }
+
 .card img {
   width: 390px;
   height: 440px;
@@ -118,18 +133,21 @@ nav ul li a {
   top: 0;
   left: 0;
 }
+
 .card .info {
   position: relative;
   z-index: 3;
   opacity: 0;
   transform: translateY(30px);
-  
+
 }
+
 .card:hover .info {
   opacity: 1;
   transform: translateY(0px);
-  
+
 }
+
 .card .info h1 {
   width: 100%;
   height: 58px;
@@ -142,16 +160,18 @@ nav ul li a {
   font-weight: 700;
   line-height: 57.8px;
   text-align: center;
-  
+
 }
+
 .card .info .crd1 {
   width: 210px;
   height: 210px;
   top: 8%;
   left: 65px;
   opacity: 0px;
-  
+
 }
+
 .card .info .crd2 {
   width: 170px;
   height: 170px;
@@ -159,8 +179,9 @@ nav ul li a {
   left: 100px;
   gap: 0px;
   opacity: 0px;
-  
+
 }
+
 .card .info .crd3 {
   width: 170px;
   height: 170px;
@@ -169,6 +190,7 @@ nav ul li a {
   gap: 0px;
   opacity: 0px;
 }
+
 .card .info p {
   margin-top: 180px;
   font-family: "jost", sans-serif;
@@ -177,10 +199,12 @@ nav ul li a {
   line-height: 34.68px;
   text-align: left;
 }
+
 .ec {
   width: 100%;
   margin-top: 7%;
 }
+
 .hed {
   height: 48px;
   top: 629px;
@@ -193,6 +217,7 @@ nav ul li a {
   line-height: 48.41px;
   text-align: center;
 }
+
 .hed h2 {
   font-family: "Inter", sans-serif;
   font-size: 40px;
@@ -205,6 +230,7 @@ nav ul li a {
   display: flex;
   justify-content: space-around;
 }
+
 .im1 {
   width: 255px;
   height: 244px;
@@ -215,6 +241,7 @@ nav ul li a {
   opacity: 0px;
   object-fit: cover;
 }
+
 .sec p {
   width: 100%;
   height: auto;
@@ -226,6 +253,7 @@ nav ul li a {
   line-height: 37.57px;
   text-align: left;
 }
+
 .trd {
   display: flex;
   justify-content: space-around;
@@ -234,6 +262,7 @@ nav ul li a {
   gap: 15px;
   padding: 15px;
 }
+
 .im2 {
   width: 255px;
   height: 244px;
@@ -244,6 +273,7 @@ nav ul li a {
   opacity: 0px;
   object-fit: cover;
 }
+
 .profile-card {
   background-color: #fff;
   border-radius: 30px;
@@ -255,9 +285,11 @@ nav ul li a {
   height: auto;
   margin-right: 0px;
 }
+
 .pc {
   display: flex;
 }
+
 .detls {
   width: 100%;
   height: 100%;
@@ -269,6 +301,7 @@ nav ul li a {
   text-align: center;
   gap: 10px;
 }
+
 .names,
 .age,
 .salary {
@@ -280,6 +313,7 @@ nav ul li a {
   padding: 10px;
   margin-left: 10px;
 }
+
 .call {
   background: rgba(53, 164, 0, 1);
   width: 138px;
@@ -288,6 +322,7 @@ nav ul li a {
   margin: 10px;
   margin-left: 65px;
 }
+
 .call a {
   text-decoration: none;
   font-family: "Jost";
@@ -297,6 +332,7 @@ nav ul li a {
   text-align: left;
   color: #fff;
 }
+
 .profile-picture {
   width: 94px;
   height: 93px;
@@ -304,6 +340,7 @@ nav ul li a {
   border: 1px solid rgba(165, 165, 165, 0.33);
   margin: 10px 0 0 10px;
 }
+
 .exp {
   margin-left: 10px;
   background: rgba(243, 249, 219, 1);
@@ -311,6 +348,7 @@ nav ul li a {
   height: 57px;
   border-radius: 24px;
 }
+
 .exp p {
   padding: 20px;
   font-family: Jost;
@@ -319,6 +357,7 @@ nav ul li a {
   line-height: 20.23px;
   text-align: left;
 }
+
 .next {
   font-size: 40px;
   box-shadow: 0px 6px 10px 1px rgba(0, 0, 0, 0.25);
@@ -329,27 +368,30 @@ nav ul li a {
   margin-top: 8%;
   padding: 10px;
 }
-.next button{
+
+.next button {
   font-size: 28px;
   border-radius: 50px;
   border-style: none;
+  background: none;
 }
+
 .next:hover {
   background-color: rgb(165, 165, 144);
   border-radius: 50px;
 
 }
+
 footer {
-  background: linear-gradient(
-    96.26deg,
-    #35a400 -11.26%,
-    #4b5d03 101.9%,
-    #329b00 101.92%
-  );
+  background: linear-gradient(96.26deg,
+      #35a400 -11.26%,
+      #4b5d03 101.9%,
+      #329b00 101.92%);
   margin-top: 100px;
   width: 100%;
   height: 222px;
 }
+
 .contain {
   display: flex;
   justify-content: space-around;
@@ -357,6 +399,7 @@ footer {
   margin-top: 50px;
   margin-left: 192px;
 }
+
 .fotrmain {
   display: flex;
   justify-content: space-around;
@@ -397,10 +440,12 @@ footer {
   margin-top: 20px;
   font-size: 10px;
 }
+
 .ph {
   color: #fff;
   font-size: 10px;
 }
+
 .two {
   width: 172px;
   height: 29px;
@@ -420,9 +465,11 @@ footer {
   text-align: left;
   margin-top: 30px;
 }
-.list{
-  margin-top: 35px;
+
+.list {
+  margin-top: 32px;
 }
+
 .list li a {
   font-family: Jost;
   font-size: 20px;
@@ -432,10 +479,12 @@ footer {
   text-decoration: none;
   color: #fff;
 }
+
 .list li {
   list-style: none;
   margin-top: 20px;
 }
+
 .lgo {
   width: 81px;
   height: 83px;
@@ -443,15 +492,18 @@ footer {
   background-color: white;
   border-radius: 50%;
 }
-.menu-btn{
+
+.menu-btn {
   display: none;
   font-size: 30px;
   cursor: pointer;
 }
-#click{
+
+#click {
   display: none;
 }
-.wpc{
+
+.wpc {
   display: block;
   display: flex;
   justify-content: center;
@@ -462,16 +514,17 @@ footer {
     width: 100%;
     box-shadow: 0px 0px;
   }
-  #click:checked ~.menu-btn :before{
+
+  #click:checked~.menu-btn :before {
     content: "\f00d";
   }
-  
-  .menu-list{
+
+  .menu-list {
     position: fixed;
     margin: 0;
     top: 50px;
     left: -100%;
-    background : #fff;
+    background: #fff;
     height: 100%;
     width: 50%;
     display: block;
@@ -479,61 +532,74 @@ footer {
     transition: all 0.3s ease;
     z-index: 1;
   }
-  #click:checked ~ .menu-list{
+
+  #click:checked~.menu-list {
     left: 0%;
-    
+
   }
-  nav ul li{
-    margin: 80px 0;
+
+  nav ul li {
+    margin: 35px 0;
     display: block;
     text-align: center;
 
   }
-  nav ul li a{
-    font-size: 30px;
-    font-weight: 700;
+
+  nav ul li a {
+    font-size: 26px;
+    font-weight: 600;
   }
-  .menu-btn{
+
+  .menu-btn {
     display: block;
     padding: 10px;
   }
-  .main{
+
+  .main {
     display: none;
     background-color: none;
   }
-  .logo{
+
+  .logo {
     display: none;
   }
-  .wpc{
+
+  .wpc {
     display: none;
   }
-  .wp{
+
+  .wp {
     display: flex;
     width: 10%;
     align-items: center;
     color: #329b00;
     font-size: 30px;
   }
-  .moblogo{
+
+  .moblogo {
     display: flex;
   }
-  #click2:checked ~ .wtsp-btn{
+
+  #click2:checked~.wtsp-btn {
     right: 0%;
-    
+
   }
-  #click2:checked ~.wtsp-btn :before{
+
+  #click2:checked~.wtsp-btn :before {
     content: "\f00d";
   }
-  
-  
+
+
 
 }
+
 @media only screen and (max-width: 576px) {
-  .ab{
+  .ab {
     display: block;
-    
+
   }
-  .card img{
+
+  .card img {
     width: 100%;
     height: 100%;
     border-radius: 29px;
@@ -543,17 +609,19 @@ footer {
     left: 0;
   }
 
-  .card{
+  .card {
     width: 353px;
     height: 230px;
   }
-  .card .info h1{
+
+  .card .info h1 {
     width: 288px;
     height: 29px;
     font-weight: 700;
     font-size: 20px;
   }
-  .card .info .crd1{
+
+  .card .info .crd1 {
     width: 85px;
     height: 92px;
     top: 22px;
@@ -562,7 +630,8 @@ footer {
     opacity: 0px;
 
   }
-  .card .info .crd2{
+
+  .card .info .crd2 {
     width: 85px;
     height: 92px;
     top: 52px;
@@ -571,7 +640,8 @@ footer {
     opacity: 0px;
 
   }
-  .card .info .crd3{
+
+  .card .info .crd3 {
     width: 85px;
     height: 92px;
     top: 42px;
@@ -590,48 +660,51 @@ footer {
     text-align: left;
 
   }
-  .card.info{
-  display: grid;
-  grid-auto-flow: column;
-  gap: 4rem;
-  overflow-y: auto;
-  overscroll-behavior-x: contain;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-  /* height: 110px; */
+
+  .card.info {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 4rem;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    /* height: 110px; */
+  }
+
+  .card {
+    scroll-snap-align: start;
+  }
+
+  .info {
+    border-radius: 10px;
+    object-fit: fill;
+    height: 70px;
+  }
+
+  .card::-webkit-scrollbar {
+    display: block;
+  }
 }
 
-.card{
-  scroll-snap-align: start;
-}
-
-.info{
-  border-radius: 10px;
-  object-fit: fill;
-  height: 70px;
-}
-
-.card::-webkit-scrollbar {
-  display: block;
-}
-}
-
-@media only screen and (max-width: 576px){
-  .hed h1{
+@media only screen and (max-width: 576px) {
+  .hed h1 {
     padding: 30px 30px;
     margin-top: 10px;
     font-size: 17px;
     font-weight: 800;
     text-align: left;
   }
-  .hed h2{
+
+  .hed h2 {
     padding: 30px 30px;
     margin-top: -40px;
     font-size: 17px;
     font-weight: 800;
     text-align: left;
   }
-  .im1{
+
+  .im1 {
     width: 158px;
     height: 151px;
     margin-top: 39px;
@@ -641,7 +714,8 @@ footer {
     opacity: 0px;
 
   }
-  .sec p{
+
+  .sec p {
     /* margin-top: 50px;   */
     font-family: Jost;
     font-size: 14px;
@@ -649,22 +723,26 @@ footer {
     line-height: 25px;
     padding: 10px;
   }
-  .im2{
+
+  .im2 {
     display: none;
   }
-  .trd{
-    justify-content:space-between;
+
+  .trd {
+    justify-content: space-between;
     padding: 20px;
     gap: 10px;
   }
-  .profile-card{
+
+  .profile-card {
     /* width: 180px; */
     height: 180px;
     border-radius: 15px;
     border: 1px solid rgba(0, 0, 0, 0.2);
 
   }
-  .profile-picture{
+
+  .profile-picture {
     width: 80px;
     height: 80px;
     /* gap: 0px; */
@@ -674,14 +752,16 @@ footer {
     border: 1px solid rgba(165, 165, 165, 0.33);
 
   }
+
   .detls {
     margin-top: 15px;
     font-size: 9px;
     font-weight: 300;
     line-height: 18.79px;
     text-align: center;
-    
+
   }
+
   .names,
   .age,
   .salary {
@@ -691,13 +771,15 @@ footer {
     height: 19px;
     border-radius: 5px;
     padding: 0px 10px 0px 10px;
-}
+  }
+
   .exp {
     background: rgba(243, 249, 219, 1);
     width: 185px;
     height: auto;
     border-radius: 5px;
   }
+
   .exp p {
     padding: 1px 0px 1px 10px;
     font-family: Jost;
@@ -705,6 +787,7 @@ footer {
     font-weight: 400;
     line-height: 20.23px;
   }
+
   .call {
     width: 73px;
     height: auto;
@@ -713,8 +796,9 @@ footer {
     border-radius: 6px;
     opacity: 0px;
     border: none;
-    
+
   }
+
   .call a {
     text-decoration: none;
     font-family: "Jost";
@@ -724,106 +808,140 @@ footer {
     text-align: center;
     color: #fff;
   }
-  
-  
-  .next{
+
+
+  .next {
     position: absolute;
     margin-top: 200px;
     margin-left: 40%;
     font-size: 4px;
   }
-  
+
 
 }
-@media only screen and (max-width: 576px){
-  .footer-content,#shaz,#phone{
+
+@media only screen and (max-width: 576px) {
+
+  .footer-content,
+  #shaz,
+  #phone {
     position: relative;
     margin-left: -110px;
     /* margin-bottom: 0px; */
     padding-left: 0px;
     font-weight: 10 px;
   }
-  .three{
+
+  .three {
     position: static;
     /* margin-top: 5px; */
     margin-left: -70px;
   }
-  footer{
+
+  footer {
     height: 100%;
     width: 100%;
   }
-  .contain{
-    margin-top: 5px;
-    margin-right: 5%;
-    
+
+  .contain {
+    margin-top: 1px;
+    margin-left: 200px;
+    /* margin-right: 5%; */
+
   }
-  .lstlogo{
+
+  .lstlogo {
     margin-top: -30px;
     margin-left: 0%;
-   
+
   }
-  .lgo{
+
+  .lgo {
     width: 50px;
     height: 50px;
     margin-right: 20px;
   }
-  .list{
-    margin-top: 35px;
+
+  .list {
+    margin-top: 33px;
   }
-  .list li a{
+  .list li{
+    margin-top: 17px;
+  }
+
+  .list li a {
     font-size: 15px;
     font-weight: 400px;
   }
-  #shaz p,#phone p{
+
+  #shaz p,
+  #phone p {
     font-size: 15px;
     font-weight: 300;
+    margin-top: 20px;
+  }
+  #shaz i,
+  #phone i {
+    margin-top: 25px;
   }
 }
+
 /* mobile view card */
 .slider-container {
   width: 100%;
   text-align: center;
   overflow: hidden;
 }
- .cardm {
-  width: calc(100% - 30px); /* Adjust width to account for padding */
+
+.cardm {
+  width: calc(100% - 30px);
+  /* Adjust width to account for padding */
   height: 300px;
   text-align: center;
   border-radius: 29px;
-  padding: 15px; 
+  padding: 15px;
   background-color: #F8F8F8;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  margin: 0 15px; /* Add margin for spacing between cards */
-  flex: 1 0 auto; /* Flex-grow, flex-shrink, and flexible width */
+  margin: 0 15px;
+  /* Add margin for spacing between cards */
+  flex: 1 0 auto;
+  /* Flex-grow, flex-shrink, and flexible width */
 }
+
 .card-wrapper {
   display: flex;
   /* margin: 15px; */
-  transition: transform 0.4s ease-in-out; /* Smooth sliding effect */
+  transition: transform 0.4s ease-in-out;
+  /* Smooth sliding effect */
 }
 
 /* Display the first card */
 .cardm:first-child {
   display: block;
 }
+
 .cardm img {
   width: 150px;
   height: 120px;
 }
+
 .cardm h1 {
   font-family: "Jost", sans-serif;
   text-align: center;
 }
+
 .cardm p {
   font-family: "jost", sans-serif;
   font-weight: 400;
 }
+
 .dots {
   display: flex;
   justify-content: center;
   padding: 10px 0;
   margin-top: 15px;
 }
+
 .dot {
   height: 10px;
   width: 10px;
@@ -832,12 +950,14 @@ footer {
   margin: 0 5px;
   cursor: pointer;
 }
+
 .active {
   background-color: #717171;
 }
+
 /* mobile view card */
-@media only screen and (min-width: 576px){
-  .slider-container{
+@media only screen and (min-width: 576px) {
+  .slider-container {
     display: none;
   }
 }
