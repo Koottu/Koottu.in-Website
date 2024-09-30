@@ -1,39 +1,43 @@
 // Attach event listeners to all "More" buttons
 document.querySelectorAll('.moreb').forEach(button => {
-    button.addEventListener('click', function() {
-      // Find the nearest 'profile-card' container
-      const profile = this.closest('.profile-card');
-      
-      // Error handling if profile is not found (optional)
-      if (!profile) {
-        console.error("Profile container not found!");
-        return; // Exit the function if no profile container is found
-      }
-  
-      // Find the 'expc' and 'exp' sections inside this profile-card
-      const expc = profile.querySelector('.expc');
-      const exp = profile.querySelector('.exp');
-      
-      // Error handling if 'expc' or 'exp' elements are not found (optional)
-      if (!expc || !exp) {
-        console.error("expc or exp elements not found in the profile card!");
-        return; // Exit if these elements are not found
-      }
-  
-      // Toggle the visibility of the 'expc' section
-      if (expc.style.display === "none" || expc.style.display === "") {
-        exp.style.display = "none";    // Hide the '.exp' section
-        expc.style.display = "block";  // Show the '.expc' section
-        this.textContent = "Less";     // Change button text to "Less"
-      } else {
-        exp.style.display = "block";   // Show the '.exp' section
-        expc.style.display = "none";   // Hide the '.expc' section
-        this.textContent = "More";     // Change button text back to "More"
-      }
+    button.addEventListener('click', function () {
+        // Find the nearest 'profile-card' container
+        const profile = this.closest('.profile-card');
+        const trd = this.closest('.trd');
+
+        // Error handling if profile is not found (optional)
+        if (!profile) {
+            console.error("Profile container not found!");
+            return; // Exit the function if no profile container is found
+        }
+
+        // Find the 'expc' and 'exp' sections inside this profile-card
+        const expc = profile.querySelector('.expc');
+        const exp = profile.querySelector('.exp');
+        const next = trd.querySelector('.next');
+
+        // Error handling if 'expc' or 'exp' elements are not found (optional)
+        if (!expc || !exp) {
+            console.error("expc or exp elements not found in the profile card!");
+            return; // Exit if these elements are not found
+        }
+
+        // Toggle the visibility of the 'expc' section
+        if (expc.style.display === "none" || expc.style.display === "") {
+            exp.style.display = "none";    // Hide the '.exp' section
+            expc.style.display = "block";  // Show the '.expc' section
+            next.style.marginTop="340px";
+            this.textContent = "Less";     // Change button text to "Less"
+        } else {
+            exp.style.display = "block";   // Show the '.exp' section
+            expc.style.display = "none";
+            next.style.marginTop="200px";   // Hide the '.expc' section
+            this.textContent = "More";     // Change button text back to "More"
+        }
     });
-  });
-  
-  
+});
+
+
 
 
 // dropdownContent visible
