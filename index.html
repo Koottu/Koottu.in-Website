@@ -75,18 +75,20 @@
   </div>
 
   <section class="main">
-    <div class="card">
-      <img class="ab" src="./images/img1.jpeg" alt="Description of the image" />
-      <div class="info">
-        <h1>ELDERLYCARE</h1>
-        <img class="crd1" src="./images/card1.png" alt="card" />
-        <p>
-          We help seniors with personalized support, including medication
-          reminders and companionship, prioritizing dignity.
-        </p>
+    <a href="#eldercare" style="text-decoration: none; color: inherit;">
+      <div class="card">
+        <img class="ab" src="./images/img1.jpeg" alt="Description of the image" />
+        <div class="info">
+          <h1>ELDERLYCARE</h1>
+          <img class="crd1" src="./images/card1.png" alt="card" />
+          <p>
+            We help seniors with personalized support, including medication
+            reminders and companionship, prioritizing dignity.
+          </p>
+        </div>
       </div>
-    </div>
-
+    </a>
+    <a href="#childcare" style="text-decoration: none; color: inherit;">
     <div class="card">
       <img class="ab" src="./images/img2.jpeg" alt="Description of the image" />
       <div class="info">
@@ -98,7 +100,8 @@
         </p>
       </div>
     </div>
-
+  </a>
+  <a href="#housekeeping" style="text-decoration: none; color: inherit;">
     <div class="card">
       <img class="ab" src="./images/img3.jpeg" alt="Description of the image" />
       <div class="info">
@@ -110,8 +113,9 @@
         </p>
       </div>
     </div>
+  </a>
   </section>
-  <section class="ec">
+  <section class="ec" id="eldercare">
     <div class="hed">
       <h2>ELDERLYCARE</h2>
     </div>
@@ -141,10 +145,17 @@
           </div>
         </div>
         <div class="exp">
-          <p>Experience: 4 Years elderlycare</p>
+          <p>Experience: 4 Years childcare</p>
+        </div>
+        <div class="expc" style="display: none;">
+          <p>Experience:<span> 4 Years</span></p>
+          <p>Category:<span> Childcare</span></p>
+          <p>Location:<span> Thana, Kannur</span></p>
+          <p>Availability:<span> Immediately</span></p>
         </div>
         <div class="but">
           <button class="call"><a href="tel:+1234567890">Call Now</a></button>
+          <div class="moreb">More</div>
         </div>
       </div>
 
@@ -166,8 +177,15 @@
         <div class="exp">
           <p>Experience: 4 Years elderlycare</p>
         </div>
+        <div class="expc" style="display: none;">
+          <p>Experience:<span> 4 Years</span></p>
+          <p>Category:<span> Childcare</span></p>
+          <p>Location:<span> Thana, Kannur</span></p>
+          <p>Availability:<span> Immediately</span></p>
+        </div>
         <div class="but">
           <button class="call"><a href="tel:+1234567890">Call Now</a></button>
+          <div class="moreb">More</div>
         </div>
       </div>
 
@@ -205,7 +223,7 @@
 
   </section>
 
-  <section class="ec">
+  <section class="ec" id="childcare">
     <div class="hed">
       <h1>CHILDCARE</h1>
     </div>
@@ -298,7 +316,7 @@
     </div>
   </section>
 
-  <section class="ec">
+  <section class="ec" id="housekeeping">
     <div class="hed">
       <h1>HOUSEKEEPING</h1>
     </div>
@@ -392,31 +410,38 @@
   </section>
 
   <footer>
-    <div class="fotrmain" id="footer">
-      <div class="contain">
-        <div class="footer-content">
-          <div id="shaz">
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-            <p class="ktug">Koottu.in@gmail.com</p>
-          </div>
-          <div id="phone">
-            <i class="fa-solid fa-phone"></i>
-            <p class="phn">+91 8848129990</p>
-          </div>
+    <div class="footer-container">
+      <div class="contact-info">
+        <div class="email">
+          <i class="fa fa-envelope icon" aria-hidden="true"></i>
+          <p class="ktug">Koottu.in@gmail.com</p>
         </div>
-        <div class="three">
-          <ul class="list">
-            <li class="pry"><a href="">Privacy policy</a></li>
-            <li class="trms"><a href="">Terms of use</a></li>
-          </ul>
+        <div class="phone">
+          <i class="fa-solid fa-phone icon"></i>
+          <p class="phn">+91 8848129990</p>
+        </div>
+        <div class="social">
+          
+            <a href="https://www.instagram.com/koottu.in" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          
+          <a href="https://wa.me/+918848129990" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
       </div>
-      <div class="lstlogo">
+      
+      <div class="policy-links">
+        <ul>
+          <li class="pry"><a href="">Privacy Policy</a></li>
+          <li class="trms"><a href="">Terms of Use</a></li>
+        </ul>
+      </div>
+      <div class="lstlogo"></div>
         <img class="lgo" src="./images/logo.png" alt="last" />
       </div>
     </div>
   </footer>
-  <script src="/slider.js"></script>
+  
+  <script src="/moreinindex.js"></script>
+  <script src="/filter.js"></script>
 </body>
 
 </html>
