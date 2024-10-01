@@ -1,39 +1,44 @@
-// Attach event listeners to all "More" buttons
 document.querySelectorAll('.moreb').forEach(button => {
-    button.addEventListener('click', function() {
-      // Find the nearest 'profile-card' container
-      const profile = this.closest('.profile-card');
-      
-      // Error handling if profile is not found (optional)
-      if (!profile) {
-        console.error("Profile container not found!");
-        return; // Exit the function if no profile container is found
-      }
-  
-      // Find the 'expc' and 'exp' sections inside this profile-card
-      const expc = profile.querySelector('.expc');
-      const exp = profile.querySelector('.exp');
-      
-      // Error handling if 'expc' or 'exp' elements are not found (optional)
-      if (!expc || !exp) {
-        console.error("expc or exp elements not found in the profile card!");
-        return; // Exit if these elements are not found
-      }
-  
-      // Toggle the visibility of the 'expc' section
-      if (expc.style.display === "none" || expc.style.display === "") {
-        exp.style.display = "none";    // Hide the '.exp' section
-        expc.style.display = "block";  // Show the '.expc' section
-        this.textContent = "Less";     // Change button text to "Less"
-      } else {
-        exp.style.display = "block";   // Show the '.exp' section
-        expc.style.display = "none";   // Hide the '.expc' section
-        this.textContent = "More";     // Change button text back to "More"
-      }
+    button.addEventListener('click', function () {
+        // Collapse all other cards back to initial height
+        document.querySelectorAll('.profile-card').forEach(card => {
+            const expc = card.querySelector('.expc');
+            const exp = card.querySelector('.exp');
+            const moreb = card.querySelector('.moreb');
+
+            // If expc and exp exist, reset them (only if it's not the clicked card)
+            if (card !== this.closest('.profile-card') && expc && exp) {
+                exp.style.display = "block";   // Show the '.exp' section
+                expc.style.display = "none";   // Hide the '.expc' section
+                card.style.height = "300px";   // Reset height to initial value
+                moreb.textContent = "More";    // Reset the "More" button text
+            }
+        });
+
+        // Expand or collapse the clicked card
+        const profile = this.closest('.profile-card');
+        const expc = profile.querySelector('.expc');
+        const exp = profile.querySelector('.exp');
+
+        if (expc.style.display === "none" || expc.style.display === "") {
+            // Expand: show expc, hide exp, change height to auto, change button text
+            exp.style.display = "none";        // Hide the '.exp' section
+            expc.style.display = "block";      // Show the '.expc' section
+            profile.style.height = "auto";     // Expand the clicked card's height
+            this.textContent = "Less";         // Change button text to "Less"
+        } else {
+            // Collapse: show exp, hide expc, change height to 300px, reset button text
+            exp.style.display = "block";       // Show the '.exp' section
+            expc.style.display = "none";       // Hide the '.expc' section
+            profile.style.height = "300px";    // Collapse card back to initial height
+            this.textContent = "More";         // Change button text back to "More"
+        }
     });
-  });
-  
-  
+});
+
+
+
+
 
 
 // dropdownContent visible
