@@ -10,6 +10,7 @@
   .dropdown-container {
     margin-top: 0px;
     justify-content: space-around;
+    padding-left: 10px;
   }
 }
 
