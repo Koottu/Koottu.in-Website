@@ -386,6 +386,9 @@ nav ul li a {
   line-height: 20.23px;
   text-align: left;
 }
+.exp span {
+  font-weight: 500;
+}
 .expc span{
   font-weight: 700;
 }
