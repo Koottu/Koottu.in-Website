@@ -430,6 +430,7 @@ nav ul li a {
   border-radius: 60px;
   margin-top: 8%;
   padding: 10px;
+  cursor: pointer;
 }
 
 .next button {
@@ -437,6 +438,7 @@ nav ul li a {
   border-radius: 50px;
   border-style: none;
   background: none;
+  cursor: pointer;
 }
 
 .next:hover {
